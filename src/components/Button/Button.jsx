@@ -1,7 +1,7 @@
-const Button = () => {
+const Button = ({children}) => {
   return (
-    <div>Button</div>
+    <div className="border-2 border-slate-500 px-4 py-1 rounded-sm cursor-pointer">{children}</div>
   )
 }
 
-export default Button
+export default Button;
