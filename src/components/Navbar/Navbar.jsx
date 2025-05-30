@@ -13,7 +13,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   }
 
   return (
-    <div className="bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300">
+    <div className="bg-cyan-100 dark:bg-slate-800 text-slate-700  dark:text-yellow-200">
       <div>
         <Logo />
 
@@ -22,7 +22,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <ToggleButton isOpen={isOpen} toggleMenu={toggleMenu} />
         </div>
 
-        <div>
+        {/* menu items */}
+
+        <div className={`flex items-center flex-grow
+        ${isOpen ? "dark:bg-slate-500 traslate-x-0": "-traslate-x-full"} lg:traslate-x-0`}>
           <MenuItems />
           <div>
             <DarkModeButton darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>

@@ -2,10 +2,10 @@ import { menuItems } from "../../constants"
 
 const MenuItems = () => {
   return (
-    <ul className="flex flex-col">
+    <ul className="flex">
       {menuItems.map((item, index) => {
         <li className="" key={index}>
-          <a href="">{item.name}</a>
+          {item.name}
         </li>
       })}
     </ul>
